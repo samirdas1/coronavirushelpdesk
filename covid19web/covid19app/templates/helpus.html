@@ -1,0 +1,177 @@
+<html>
+
+<head>
+    <style>
+        body {
+
+
+            background-image: url("static/ww.webp");
+
+            div.second {
+                opacity: 0.1;
+            }
+
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-right: 0px;
+            margin-left:0px;
+            max-resolution: 100px;
+            background-image: linear-gradient(to left, black 10%, white 70%),
+            url('static/ww.webp');
+            background-image: linear-gradient(to left, white 10%, black 100%),
+            url('static/ww.webp');
+            background-attachment:fixed;
+            background-blend-mode:darken;
+
+
+        }
+
+        .serif {
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        .sansserif {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .monospace {
+            font-family: "Lucida Console", Courier, monospace;
+        }
+    </style>
+
+    <head>
+        <title>Bootstrap Example</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    </head>
+</head>
+
+<body>
+    < <img src="static/bsflogo.png" class="float-left" alt="Paris" width="120" height="120">
+        <img src="static/robolution.png" class="float-right" alt="Paris" width="150" height="100">
+        <div class="container" ;style="margin:30px">
+            <p class="text-white"
+                style="font-size:30;font-family: Times New Roman;margin-top: 30px;text-align: center;">
+                HELP US TO HELP OTHERS........
+            </p>
+            <p class="text-white" style="font-size:20;font-family: Times New Roman;margin-top: 30px;">
+                1.It is non-profitable organization which is made to provide help to the under previlliged families.<br>
+                2.We convey message of requirements from one requester to the provider.<br>
+                3.we aim to provide Help Daily Wage Earners hit by lockdown period in this coronavirus.<br>
+                4.who are not in any condition to earn their living. <br>
+                5.Inform us the difficulties in your locality and we promise to help you out.<br>
+                6.contact us in our helpline no. 8016102356,7550892298<br>
+
+
+            </p>
+
+            <form>
+
+                <body>
+                    <br>
+                    <p style="color: aliceblue;font-family: serif;font-weight: bold; font-size:30;text-align: center;">
+                        HOW CAN U support us ??</p>
+                        
+                            
+                    <p style="color: aliceblue;font-size: 18; font-family:serif">1.MEDICAL SUPPLIES: <input
+                            type="checkbox" id="myCheck1" onclick="myFunction1()">
+
+                        <input type="text" class="form-control " style="display:none" id="text1"
+                            placeholder="Enter the medical supplies you can provide" required></p></input>
+                    </p>
+
+                    <p style="color: aliceblue;font-size: 18; font-family:serif">2.FOOD: <input type="checkbox"
+                            id="myCheck2" onclick="myFunction2()">
+
+                        <input type="text" class="form-control " style="display:none" id="text2"
+                            placeholder="enter the no. of people that could be helped(approx. no)" required></input><br>
+                        <input type="text" class="form-control " style="display:none" id="text5"
+                            placeholder="Enter the location you can help:" required></input></p>
+
+
+                    <p style="color: aliceblue;font-size: 18; font-family:serif">3.VOLUNTEER: <input type="checkbox"
+                            id="myCheck3" onclick="myFunction3()">
+
+                        <input type="text" class="form-control " style="display:none" id="text3"
+                            placeholder="Enter the location where u could provide help." required></input>
+                    </p>
+                    <p style="color: aliceblue;font-size: 18; font-family:serif">3.OTHERS:<input type="checkbox"
+                        id="myCheck4" onclick="myFunction4()">
+
+                    <input type="text" class="form-control " style="display:none" id="text4"
+                        placeholder="how would u like to help by other means" required></input>
+                    </p>
+                    <script>
+                        function myFunction1() {
+                            var checkBox = document.getElementById("myCheck1");
+                            var text = document.getElementById("text1");
+                            if (checkBox.checked == true) {
+                                text.style.display = "block";
+                            } else {
+                                text.style.display = "none";
+                            }
+                        }
+                        function myFunction2() {
+                            var checkBox = document.getElementById("myCheck2");
+
+                            var text = document.getElementById("text2");
+                            var text1 = document.getElementById("text5");
+                            if (checkBox.checked == true) {
+                                text.style.display = "block";
+                                text1.style.display = "block";
+                            } else {
+                                text.style.display = "none";
+                                text1.style.display = "none";
+                            }
+                        }
+                        function myFunction3() {
+                            var checkBox = document.getElementById("myCheck3");
+                            var text = document.getElementById("text3");
+                            if (checkBox.checked == true) {
+                                text.style.display = "block";
+                            } else {
+                                text.style.display = "none";
+                            }
+                        }
+                        function myFunction4() {
+                            var checkBox = document.getElementById("myCheck4");
+                            var text = document.getElementById("text4");
+                            if (checkBox.checked == true) {
+                                text.style.display = "block";
+                            } else {
+                                text.style.display = "none";
+                            }
+                        }
+                    </script>
+                    <p class="text-white" style="font-size:20;font-family: Times New Roman;margin-top:1cm;">NAME:</p>
+                        </p>
+                    <textarea class="form-control" rows="1" id="NAME"
+                    placeholder="enter name"></textarea>
+                    <p class="text-white" style="font-size:20;font-family: Times New Roman;margin-top:1cm;">CONTACT NO:
+                        </p>
+                    <textarea class="form-control" rows="1" id="comment"
+                    placeholder="contact no"></textarea>
+                    <button type="submit" class="btn btn-success" style="margin-left: 0cm;margin-top: 1cm;">submit</button>
+            </form>
+
+
+
+            <p class="text-white" style="font-size:20;font-family: Times New Roman;margin-top:2cm;">Write your
+                problems...</p>
+            <form>
+                <textarea class="form-control" rows="6" id="comment"
+                    placeholder="what are your problems......"></textarea>
+
+                <p style="color: aliceblue;font-family: Times New Roman;font-size:20;margin-top:0.5cm;">
+                    You can also email us your problems at robolutionrjit@gmail.com</p>
+
+                <button type="submit" class="btn btn-success" style="margin-left:cm;">submit</button>
+            </form>>
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,8 @@
+{% if obj %} {% for k in obj %} "{{ k.ngo_name }}" {%if k.ngo_state %}
+<font>, </font> {{k.ngo_district }} <font>, </font> {% k.ngo_state=="delhi"
+%}{{k.ngo_state}} {% endif %} <font>, </font>
+{{k.contact}}
+<hr />
+<br />
+
+{% endfor %} {% endif %}

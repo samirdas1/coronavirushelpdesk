@@ -1,0 +1,158 @@
+<head>
+    < <img src="static/bsflogo.png" class="float-left" alt="Paris" width="120" height="120">
+        <img src="static/robolution.png" class="float-right" alt="Paris" width="150" height="100">
+        <title>Bootstrap 4 Website Example</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <style>
+            .fakeimg {
+                height: 200px;
+                background: #aaa;
+            }
+        </style>
+</head>
+
+<style>
+    body {
+
+
+        background-image: url("ww.webp");
+
+        div.second {
+            opacity: 0.1;
+        }
+
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-right: 0px;
+        margin-left:0px;
+        max-resolution: 100px;
+        background-image: linear-gradient(to left, black 10%, white 70%),
+        url('static/ww.webp');
+        background-image: linear-gradient(to left, white 10%, black 100%),
+        url('static/ww.webp');
+        background-attachment:fixed;
+        background-blend-mode:darken;
+    }
+
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</style>
+
+<div class="container">
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <center>
+        <font size="1" color="white"><abbr>
+                <h4>Registering to this website, you accept our Terms of Use and our Privacy Policy </h4>
+            </abbr>
+            <br>
+            <font size="2" color="white"><abbr>
+                    <h4>Not a member?sign up</h4>
+                </abbr></font>
+
+
+            <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal1">sign
+                up</button>
+    </center>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal1" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header" style="background-color: aqua;padding:1cm;">
+                    <h2 class="modal-title" ;>
+                        <font size="6" color="black"><abbr>Sign up</abbr></font>
+                    </h2>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                </div>
+
+                <div class="modal-body">
+                    <p>log in with ur registered id</p>
+                    <form action="/action_page.php" method="get">
+                        <label for="fname">
+                            <font size="2" color="black"><abbr>first name:</abbr></font>
+                        </label>
+                        <input type="text" id="fname" name="fname"><br><br>
+                        <label for="lname">
+                            <font size="2" color="black"><abbr>last name:</abbr></font>
+                        </label>
+                        <input type="text" id="lname" name="lname"><br><br>
+                        <label for="lname">
+                            <font size="2" color="black"><abbr>email  id:</abbr></font>
+                        </label>
+                        <input type="text" id="lname" name="lname"><br><br>
+                        <label for="lname">
+                            <font size="2" color="black"><abbr>password:</abbr></font>
+                        </label>
+                        <input type="text" id="lname" name="lname"><br><br>
+                        
+                    </form>
+                </div>
+                <div class="modal-footer"style="background-color:lightgrey">
+                    <button type="button" class="btn btn-success" data-dismiss="modal">login</button>
+                    <button type="reset" class="btn btn-warning" data-dismiss="modal">Reset</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </font>
+</div>
+
+<br>
+<center>
+    <font size="2" color="white"><abbr>
+            <h2>Already have an account </h2>
+        </abbr>
+    </font><br>
+    <!-- Trigger the modal with a button -->
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">click
+        to login</button>
+
+</center>
+<br>
+<!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header" style="background-color: aqua;padding:1cm;">
+                <h2 class="modal-title" ;>
+                    <font size="6" color="black"><abbr>Sign in</abbr></font>
+                </h2>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+            </div>
+            <div class="modal-body">
+                <p>log in with ur registered id</p>
+                <form action="/action_page.php" method="get">
+                    <label for="fname">
+                        <font size="2" color="black"><abbr>username:</abbr></font>
+                    </label>
+                    <input type="text" id="fname" name="fname"><br><br>
+                    <label for="lname">
+                        <font size="2" color="black"><abbr>password:</abbr></font>
+                    </label>
+                    <input type="text" id="lname" name="lname"><br><br>
+                </form>
+            </div>
+            <div class="modal-footer" style="background-color:lightgrey">
+                <button type="button" class="btn btn-success" data-dismiss="modal">login</button>
+                <button type="reset" class="btn btn-warning" data-dismiss="modal">Reset</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</div>

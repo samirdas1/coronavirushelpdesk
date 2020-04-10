@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+
+
+            background-image: url("static/ww.webp");
+
+            div.second {
+                opacity: 0.1;
+            }
+
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-right: 0px;
+            margin-left:0px;
+            max-resolution: 100px;
+            background-image: linear-gradient(to left, black 10%, white 70%),
+            url('static/ww.webp');
+            background-image: linear-gradient(to left, white 10%, black 100%),
+            url('static/ww.webp');
+            background-attachment:fixed;
+            background-blend-mode:darken;
+        }
+
+        .serif {
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        .sansserif {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .monospace {
+            font-family: "Lucida Console", Courier, monospace;
+        }
+
+        <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </style>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    < <img src="static/bsflogo.png" class="float-left" alt="Paris" width="120" height="120">
+        <img src="static/robolution.png" class="float-right" alt="Paris" width="150" height="100">
+        <div class="container" style="margin-top: 100px;font-family:serif;">
+            <center>
+                <font size="8" color="white"><abbr> NEED HELP??? </abbr> </font>
+            </center>
+        </div>
+        <div class="container">
+            <form method="post">
+                <div class="form-group" style="margin-right:8cm">
+                    <label for="name">
+                        <font size="4" color="white"><abbr>Name: </abbr> </font>
+                    </label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter name" name="name" required>
+
+
+                </div>
+                <div class="form-group " style="margin-right:15cm">
+                    <label for="state">
+                        <font size="4" color="white"><abbr>ADDRESS: </abbr> </font><br>
+
+                        <font size="4" color="white"><abbr>STATE: </abbr> </font>
+                    </label>
+                    <input type="state" class="form-control" style="margin-left:cm;" id="state"
+                        placeholder="Enter state" name="state" required>
+                    <label for="district" style="margin-left:;"><br>
+                        <font size="4" color="white"><abbr>DISTRICT: </abbr> </font>
+                    </label>
+                    <input type="district" class="form-control" style="margin-left:cm;id=" district"
+                        placeholder="Enter district" name="district"required>
+
+
+                    <label for="city" style="margin-left:;"><br>
+                        <font size="4" color="white"><abbr>CITY: </abbr> </font>
+                    </label>
+                    <input type="district" class="form-control" style="margin-left:cm;id=" city"
+                        placeholder="Enter district" name="city"required>
+
+                    <label for="district" style="margin-left:;"><br>
+                        <font size="4" color="white"><abbr> Area: </abbr> </font>
+                    </label>
+                    <input type="location" class="form-control" style="margin-left:cm;id=" location"
+                        placeholder="Enter location" name="area" required>
+
+
+                </div>
+
+                <font size="4" color="white"><abbr>MATERIALS: </abbr> </font>
+                <div style="margin margin-right: 10cm;">
+                    <div class="form-check">
+                        <label class="form-check-label" for="food">
+                            <input type="checkbox" class="form-check-input" id="food" name="food"
+                                value="True">
+                            <font size="4" color="white"><abbr>FOOD: </abbr> </font>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label" for="sanitizer">
+                            <input type="checkbox" class="form-check-input" id="sanitizer" name="sanitizer"
+                                value="True">
+                            <font size="4" color="white"><abbr>SANITIZATION KIT </abbr> </font>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label" for="medical_supply">
+                            <input type="checkbox" class="form-check-input" id="medical_supply" name="medical_supply"
+                                value="True">
+                            <font size="4" color="white"><abbr>MEDICAl SUPPLY: </abbr> </font>
+                        </label>
+                        <br>
+                    </div>
+                    <div class="form-check"style="margin-right: 8cm;">
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" id="myCheck1" name="optradio3"
+                                value="option3" onclick="myFunction1()">
+                            <font size="4" color="white"><abbr>OTHERS: </abbr> </font>
+                        </label>
+                        <input type="text" class="form-control " style="display:none" id="text1"
+                            placeholder="Enter the medical supplies you can provide" ></p></input>
+
+
+                        <script>
+                            function myFunction1() {
+                                var checkBox = document.getElementById("myCheck1");
+                                var text = document.getElementById("text1");
+                                if (checkBox.checked == True) {
+                                    text.style.display = "block";
+                                } else {
+                                    text.style.display = "none";
+                                }
+                            }
+
+                        </script>
+                        </label>
+                        <br>
+                    </div>
+                </div>
+                <div class="form-group" style="margin-left:cm;margin-right:8cm ;">
+                    <label for="pwd">
+                        <font size="4" color="white"><abbr>Contact No. </abbr> </font>
+                    </label>
+                    <input type="city" class="form-control" id="Contact no." placeholder="123456789" name="Contact" required>
+
+                    <label for="no of people">
+                        <font size="4" color="white"><abbr>No of people: </abbr> </font>
+                    </label>
+                    <input type="city" class="form-control" id="number of people:" placeholder="123" name="people" required>
+                </div>
+
+
+                <button type="submit" class="btn btn-primary"
+                    style="margin-top: 30px;margin-left:1030px;margin-bottom: 20px;padding: 20px 40px;font-family: serif;font-weight: bold;">Submit</button>
+
+
+            </form>
+
+        </div>
+
+        </div>
+
+</body>
+
+
+</body>
+
+</html>
