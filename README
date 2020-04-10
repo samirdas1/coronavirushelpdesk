@@ -1,0 +1,35 @@
+1) Title of the project - COVID19 HELPDESK 
+
+2) Discription - We have made this website to help Financially deprived peoples and local migrants.
+   In this website our main objective is to connect those people who need help to those people who want to help our society, 
+   this is why we have given help form on first page of our website. In that we have tried to ask as less informaion as possible
+   in very user friendly manner.
+   Inspite of that if anyone want to serve poor people through us , we have also provided form for that.
+   In the navigation bar there are couple of more options like -
+   1) Latest update - to provide current situation our country.
+   2) States Data - to give no.of cases statewise .
+   3) Helpline no. - Which shows police helpline no. statewise
+   4) Login page - for registered members and admin login.
+   5) world Data - which provide worldwide cases of corona virus pandamic.
+   6) About us - which provide to contact us. 
+
+   In the first page there is also a very useful information about how to make your kids mentally healthy during this pendamic.
+ 
+
+3) Hardware and Software Required - 
+   Hardware Required - Personal computer or laptop.
+   Software Required - Python3 , pip , Django(Python module)
+
+4) Process Flow -
+   Opening website -
+  	step 1) Go to the folder coronavirushelpdesk -> covid19web
+        step 2) open command prompt here.
+        step 3) type "python manage.py runserver"
+        step 4) the server will start, copy the ip address and paste it in your web browser.
+  Opening admin panel - 
+	step 1) In the your web browser goto "127.0.0.1/admin" . 
+	step 2) Enter username and password as .................(THE USERNAME:eyantra ,PASSWORD:sam123456)
+	step 3) Here , there two model having names Ngo_list and Person_help.
+		Ngo list will contain database of NGO's and the submitted forms will show in the person_help model.
+
+5) Data Flow Diagram -  Data flow diagram is provided in image formate in the folder coronavirushelpdesk.
